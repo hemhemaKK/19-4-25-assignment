@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+header{
+    background-color: rgb(237, 102, 40);
+    padding: .75rem 6.5rem;
+    color: white;
+    margin-bottom : 40px;
+}
+.navbar{
+  align-items: center;
+  margin-top : 20px;
+}
+h1{
+    color: navy;
+}
+nav a{
+    text-decoration: none;
+    color:aliceblue;
+    margin : 10px;
+}
+#about{
+    margin-left: 20px;
+    line-height: 1.8;
+}
+img{
+    border-style: ridge;  
+}
+.personal{
+    border-style: ridge;  
+}
+.personal p{
+    border-style: ridge;  
+    margin-left: 20px;
+}
+li, h4, a, h3{
+    margin-left: 20px;
+}
+ul{
+    margin-left: 50px;
+}
+#contact{
+    margin-left: 20px;
+}
+footer{
+    background-color: orangered;
+    height: 65px;
+}
+</style>
+<body>
+   
+    <header>
+    <center>
+        <h1> My Portfolio</h1>
+        <nav class="navbar">
+            <a href="#"> <b>About</b> </a>
+            <a href="#"> <b>Projects</b> </a>
+            <a href="#"> <b>Contact</b> </a>
+        </nav>
+    </center>
+    </header>
+
+        <section id="about">
+            <h2 >About Me</h2>
+            <br>
+            <p>Hello!, I'm a web developer passionate about building dynamic and responsive websites.</p>
+            <img src="pic hema.jpg" alt="Girl in a jacket" width="500" height="600">
+        </section>
+        <br><br>
+        <section id="about">
+            <h2 >Projects</h2>
+            <br>
+            <div class="personal">
+                <h3>Project One: Personal log</h3>
+                <p>Screenshot of my personal blog project</p>
+                <h4>A personal blog where I write about web development, programming, and technology.</h4>
+                <a href="url">view Project</a>
+                <li>Technologies Used:</li>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+                </p>
+            </div><br>
+            <div class="personal">
+                <h3>Project Two: E-commerce </h3>
+                <p>Screenshot of my E-commerce  project</p>
+                <h4>A E-commerce where I order products in this website, programming, and technology.</h4>
+                <a href="url">view Project</a>
+                <li>Technologies Used:</li>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+                </p>
+            </div>
+        </section>
+        <br><br>
+        <section id="contact">
+            <h2>Contact</h2>
+            <legend>Name:</legend>
+            <input type="text" />
+
+            <legend>Email:</legend>
+            <input type="email" />
+        
+            <legend>message</legend>
+            <textarea id="mess" rows="4" cols="20"></textarea>
+
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </section>
+        <br>
+   
+    <footer><center>
+        <h4><br>@2024 My Portfolio</h4>
+        <p>Follow me on <a href="">Twitter</a>| <a href="">GitHUb</a></p>
+    </center>
+    </footer> 
+
+</body>
+</html>
