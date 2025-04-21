@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L0 - Styling Elements with Descendant and Child Combinators</title>
+    <style>
+       *{
+        color: blue;/* selector is 0 so it as less priority than class*/
+       }
+       .highlight p{
+        color: blueviolet;/* so class is 10+ p is 1 therfore total 11*/
+       }
+       #special p{ /*---the output will bee this color because of the higher order value as for id is 100--*/
+        color: brown; /* so id is 100+ p is 1 therfore total 101*/
+       }
+    </style>
+</head>
+<body>
+    <div class="highlight" id="special">
+        <p>Hi paragraph as been mentioned inside div</p>
+        <div>
+            <p>This is section paragraph </p>
+        </div>
+    </div>
+</body>
+</html>

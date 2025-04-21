@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L2 - Complex Navigation Styling with Combinators, Pseudo-Classes, and Specificity</title>
+<style>
+    nav a{
+        text-decoration: none;
+        margin: 10px;
+        font-weight: bold;
+        font-size: 28px;
+        display: block;
+    }
+    .home a{
+        color: rgb(8, 245, 24);
+    }
+    .about a{
+        color: rgb(255, 121, 4);
+    }
+    .contact a{
+        color: rgb(245, 8, 229);
+    }
+    section a:hover{
+        color: blue;
+    }
+    section a:active{
+        color: rgb(9, 5, 5);
+    }
+
+    .About>a{
+        color: darkblue;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .services>a{
+        color: rgb(118, 118, 208);
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .About a,.services a {
+    font-size: 16px; /*--it is overridden because of the score of this is 10+1 = 11*/
+}
+
+section a[href^="https"]{
+    color: rgb(252, 38, 0);
+    font-weight: bold;
+    font-size: 28px;
+}
+</style>
+</head>
+<body>
+    <h1>L2 - Complex Navigation Styling with Combinators, Pseudo-Classes, and Specificity</h1>
+<center>   
+    <h3>Navigation Bar</h3>
+    <nav>
+        <section class="home">
+        <a href="">Home</a>
+        </section>
+        <section class="about">
+        <a href="">About</a>
+        </section>
+        <section class="contact">
+        <a href="">Contact</a>
+         </section> 
+    </nav>
+
+
+    <section class="About">
+        <a href="#">Direct Link in About</a>
+        <div><br>
+            <a href="https">Nested Link in About as the condition </a>
+        </div>
+    </section>
+    <br><br>
+    <section class="services">
+        <a href="">Direct Link in Services</a>
+        <div><br>
+            <a href="#">Nested Link in Services</a>
+        </div>
+    </section>
+
+    
+</center>
+
+
+</body>
+</html>
